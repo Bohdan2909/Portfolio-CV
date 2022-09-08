@@ -15,4 +15,14 @@ burger.addEventListener('click', openMenu);
 close.addEventListener('click', closeMenu);
 overlay.addEventListener('click', closeMenu);
 
+
+//Counter skills
+const counters = document.querySelectorAll('.skills__ratings-counter');
+const lines = document.querySelectorAll('.skills__ratings-line span');
+
+counters.forEach((item, i) => {
+  
+  lines[i].style.width = item.innerHTML;
+
+});
 });
